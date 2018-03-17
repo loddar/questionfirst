@@ -21,12 +21,14 @@ package org.questionfirst.example;
 
 import org.junit.Test;
 import org.questionfirst.annotation.Question;
+import org.questionfirst.who.BigBoss;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
+@Question(questions={"How to ..."}, who = {BigBoss.class})
 public class NameMeTest {
-    @Question("How to ...")
+    @Question(questions={"How to ..."}, who = {BigBoss.class})
     @Test
     public void test() {
 
