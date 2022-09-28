@@ -9,7 +9,7 @@ package org.questionfirst.who;
 public class BigBoss implements Stakeholder {
     @Override
     public String bio() {
-        return "I'm the Big Boss and I'm the best ever lived on earth. Working at leat 48 h the day. And my biggest buddy is D. Trump.";
+        return "I'm the Big Boss and I'm the best ever lived on earth. Working at leat 48 h the day.";
     }
 
     @Override
