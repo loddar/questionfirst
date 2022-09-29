@@ -4,7 +4,7 @@
 
 package org.questionfirst.who;
 
-import org.questionfirst.qf.cls.Persona;
+import org.questionfirst.qf.entities.Persona;
 
 public class PeterMustermann implements Persona {
     @Override

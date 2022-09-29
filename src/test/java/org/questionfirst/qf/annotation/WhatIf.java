@@ -8,8 +8,8 @@ import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Target;
 
-@Target({ElementType.METHOD, ElementType.TYPE})
+@Target({ElementType.METHOD})
 @Documented
-public @interface ASolution {
-    String reason();
+public @interface WhatIf {
+    String value();
 }

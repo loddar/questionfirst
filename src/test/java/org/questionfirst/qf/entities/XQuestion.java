@@ -2,7 +2,7 @@
  * Copyright (c) 2022.
  */
 
-package org.questionfirst.qf.cls;
+package org.questionfirst.qf.entities;
 
 
 public interface XQuestion {

@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2018-2022.
  */
-package org.questionfirst.qf.cls;
+package org.questionfirst.qf.entities;
 
 /**
  * Stakeholder is 

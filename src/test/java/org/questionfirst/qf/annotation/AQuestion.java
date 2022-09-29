@@ -3,8 +3,8 @@
  */
 package org.questionfirst.qf.annotation;
 
-import org.questionfirst.qf.cls.Stakeholder;
-import org.questionfirst.qf.cls.XQuestion;
+import org.questionfirst.qf.entities.Stakeholder;
+import org.questionfirst.qf.entities.XQuestion;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

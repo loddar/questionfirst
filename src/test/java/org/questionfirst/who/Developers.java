@@ -3,7 +3,7 @@
  */
 package org.questionfirst.who;
 
-import org.questionfirst.qf.cls.Stakeholder;
+import org.questionfirst.qf.entities.Stakeholder;
 
 /**
  * Developers are

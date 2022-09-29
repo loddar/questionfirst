@@ -4,8 +4,8 @@
 
 package org.questionfirst.questions;
 
-import org.questionfirst.qf.cls.Stakeholder;
-import org.questionfirst.qf.cls.XQuestion;
+import org.questionfirst.qf.entities.Stakeholder;
+import org.questionfirst.qf.entities.XQuestion;
 import org.questionfirst.who.BigBoss;
 
 public class HandleMultipleCurrencies implements XQuestion {
