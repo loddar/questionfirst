@@ -1,10 +1,12 @@
 /*
- * Copyright (c) 2018.
+ * Copyright (c) 2018-2022.
  */
 package org.questionfirst.who;
 
+import org.questionfirst.qf.cls.Stakeholder;
+
 /**
- * Developers is responsible for ...
+ * Developers are
  */
 public abstract class Developers implements Stakeholder {
 }

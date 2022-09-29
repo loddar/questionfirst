@@ -1,4 +1,5 @@
 .gradle
+.idea/
 /build/
 
 # Ignore Gradle GUI config
@@ -37,3 +38,7 @@ gradle.bat
 gradlew\.bat
 
 questionfirst\.iws
+
+# Ignore Gradle build output directory
+build
+/.idea/.gitignore

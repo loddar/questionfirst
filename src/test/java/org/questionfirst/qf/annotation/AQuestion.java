@@ -1,9 +1,10 @@
 /*
- * Copyright (c) 2018.
+ * Copyright (c) 2018-2022.
  */
-package org.questionfirst.annotation;
+package org.questionfirst.qf.annotation;
 
-import org.questionfirst.who.Stakeholder;
+import org.questionfirst.qf.cls.Stakeholder;
+import org.questionfirst.qf.cls.XQuestion;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
@@ -12,13 +13,14 @@ import java.lang.annotation.Target;
 
 
 @Target({ElementType.METHOD, ElementType.TYPE})
-@Repeatable(Question.Questions.class)
+@Repeatable(AQuestion.Questions.class)
 @Documented
-public @interface Question {
+public @interface AQuestion {
 
-    String[] value() default {"Please ask!"};
+    String value() default "Please ask!";
 
-    String[] questions() default {};
+
+    Class<? extends XQuestion>[] xquestion() default {};
 
     Class<? extends Stakeholder>[] who() default {};
 
@@ -27,6 +29,6 @@ public @interface Question {
     @Target({ElementType.METHOD, ElementType.TYPE})
     @Documented
     public @interface Questions {
-        Question[] value();
+        AQuestion[] value();
     }
 }

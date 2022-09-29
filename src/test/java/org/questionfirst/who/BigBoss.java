@@ -1,10 +1,12 @@
 /*
- * Copyright (c) 2018.
+ * Copyright (c) 2018-2022.
  */
 package org.questionfirst.who;
 
+import org.questionfirst.qf.cls.Stakeholder;
+
 /**
- * BigBoss is responsible for ...
+ * BigBoss is
  */
 public class BigBoss implements Stakeholder {
     @Override
@@ -13,20 +15,20 @@ public class BigBoss implements Stakeholder {
     }
 
     @Override
-    public Intentions[] intentions() {
-        return new Intentions[] { //
-            new BigBoss.AsCheapAsPossible(), //
-            new BigBoss.DeliveredYesterday(), //
-                new BigBoss.OurCustomersAreInSwitzerlandAndEu(), //
+    public Stakeholder.Intentions[] intentions() {
+        return new Stakeholder.Intentions[] { //
+                new AsCheapAsPossible(), //
+                new DeliveredYesterday(), //
+                new OurCustomersAreInSwitzerlandAndEu(), //
         };
     }
 
-    public class OurCustomersAreInSwitzerlandAndEu implements Intentions {
+    public static class OurCustomersAreInSwitzerlandAndEu implements Intentions {
     }
 
-    private class AsCheapAsPossible implements Intentions {
+    private static class AsCheapAsPossible implements Intentions {
     }
 
-    private class DeliveredYesterday implements Intentions {
+    private static class DeliveredYesterday implements Intentions {
     }
 }
